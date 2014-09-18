@@ -1,24 +1,6 @@
 <html>
-<title>DyE - Fantasy</title>
-
-<style>
-
-</style>
-
-<body>
-<a href="praise.html" target = "blank">
-<img src="sun.jpg" style="width:5px;height:5px;border:0" align = "right">
-</a>
-<br>
-<br>
-
-<center><iframe src="http://giphy.com/embed/rBYc4tkIeLCNy?html5=true" width="500" height="380" frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></center><br>
-
-<br>
-<br>
-<br>
-
 <center>Username: <input type="text" id="myTextField"/>
+Password: <input type="text" id="myTextFieldb"/>
 <input type="submit" id="byBtn" value="Sign In" onclick="check()"/>
 
 <p id="demo"></p></center>
@@ -27,22 +9,18 @@
 function check() {
     
  var username = document.getElementById('myTextField').value;
+var password = document.getElementById('myTextFieldb').value;
    if( username.length==0 ){
-       alert('Enter A Username.');
-   return;
-}
+       alert('ENTER A USERNAME.');
+   return;}
 
-    var str = "Begin Initiation";
-    var result = str.link("keypad.html");
-    document.getElementById("demo").innerHTML = result;
+   else if(password.length==0){
+	alert('ENTER A PASSWORD.');
+	return;}
+
+    var str = "Congratulations. You have successfully signed in.";
+    var res = str.toUpperCase();
+    document.getElementById("demo").innerHTML = res;
 }
 </script>
-
-<br>
-<br>
-
-
-
-
-</body>
 </html>
